@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -859,6 +859,189 @@
       }
     }
   </style>
+
+
+/* =========================================================
+   DR AUTO — OUR SERVICES / CLEAR MOBILE DESIGN
+   Added before OUR OFFERS to match the reference layout.
+========================================================= */
+.dr-services-section {
+  position: relative;
+  padding: 110px 22px 115px;
+  overflow: hidden;
+  background: #050622;
+  color: #fff;
+}
+
+.dr-services-container {
+  max-width: 1180px;
+  margin: 0 auto;
+}
+
+.dr-services-header {
+  text-align: center;
+  margin-bottom: 72px;
+}
+
+.dr-services-header h2 {
+  margin: 0;
+  font-size: clamp(42px, 6vw, 72px);
+  line-height: 1;
+  font-weight: 800;
+  letter-spacing: -2px;
+  color: #fff;
+}
+
+.dr-services-header p {
+  max-width: 760px;
+  margin: 24px auto 0;
+  color: #aeb7d5;
+  font-size: 20px;
+  line-height: 1.7;
+}
+
+.dr-services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 82px 45px;
+}
+
+.dr-service-item {
+  text-align: center;
+  min-width: 0;
+}
+
+.dr-service-icon {
+  width: 94px;
+  height: 94px;
+  margin: 0 auto 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 42px;
+  border-radius: 24px;
+  background: rgba(255,255,255,.025);
+  border: 1px solid rgba(255,255,255,.07);
+  color: var(--service-color);
+  box-shadow: 0 15px 35px rgba(0,0,0,.22), inset 0 0 24px rgba(255,255,255,.02);
+}
+
+.dr-service-item h3 {
+  margin: 0 0 16px;
+  color: #fff;
+  font-size: 27px;
+  line-height: 1.25;
+  font-weight: 800;
+}
+
+.dr-service-item p {
+  max-width: 380px;
+  margin: 0 auto;
+  color: #9fa9c9;
+  font-size: 17px;
+  line-height: 1.75;
+}
+
+/* Small clarity improvements for the existing OUR OFFERS section */
+.dr-offers-section {
+  background: linear-gradient(180deg, #07082a 0%, #090b25 100%) !important;
+}
+
+.dr-offers-header {
+  margin-bottom: 68px !important;
+}
+
+.dr-offers-header h2 {
+  color: #fff !important;
+}
+
+.dr-offers-header p {
+  color: #aeb7d5 !important;
+}
+
+.dr-offer-card {
+  background: linear-gradient(180deg, rgba(24,28,67,.96), rgba(11,14,40,.98)) !important;
+  border: 1px solid rgba(118,139,202,.22) !important;
+  box-shadow: 0 18px 50px rgba(0,0,0,.28) !important;
+}
+
+.dr-offer-card:hover {
+  border-color: rgba(0,242,254,.38) !important;
+  transform: translateY(-5px);
+}
+
+.dr-offer-subtitle,
+.dr-offer-features li,
+.dr-practical-note {
+  color: #aeb7d5 !important;
+}
+
+.dr-offer-price {
+  border-top-color: rgba(118,139,202,.18) !important;
+}
+
+.dr-offer-button {
+  background: linear-gradient(90deg, #16a34a, #22c55e) !important;
+}
+
+.dr-offer-button:hover {
+  background: linear-gradient(90deg, #12833c, #16a34a) !important;
+}
+
+@media (max-width: 900px) {
+  .dr-services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 70px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .dr-services-section {
+    padding: 82px 20px 92px;
+  }
+
+  .dr-services-header {
+    margin-bottom: 78px;
+  }
+
+  .dr-services-header h2 {
+    font-size: 44px;
+    letter-spacing: -1.5px;
+  }
+
+  .dr-services-header p {
+    font-size: 17px;
+    line-height: 1.65;
+  }
+
+  .dr-services-grid {
+    grid-template-columns: 1fr;
+    gap: 112px;
+  }
+
+  .dr-service-icon {
+    width: 86px;
+    height: 86px;
+    margin-bottom: 30px;
+    font-size: 38px;
+    border-radius: 22px;
+  }
+
+  .dr-service-item h3 {
+    font-size: 29px;
+  }
+
+  .dr-service-item p {
+    max-width: 700px;
+    font-size: 18px;
+    line-height: 1.75;
+  }
+
+  .dr-offers-section {
+    padding-top: 82px !important;
+  }
+}
+
 </head>
 <body>
   <!-- Animated Background -->
@@ -962,7 +1145,6 @@
       </div>
     </div>
   </header>
-</header>
 <!-- =========================================================
      DR AUTO — OUR OFFERS
      PREMIUM CARBON FIBRE THEME
@@ -1960,6 +2142,59 @@
 <!-- =========================================================
      OUR OFFERS SECTION
 ========================================================= -->
+
+
+
+<!-- =========================================================
+     DR AUTO — OUR SERVICES
+     Clean layout inspired by the mobile reference
+========================================================= -->
+<section class="dr-services-section" id="services">
+  <div class="dr-services-container">
+    <div class="dr-services-header">
+      <h2>OUR SERVICES</h2>
+      <p>Des services automobiles professionnels pour diagnostiquer, entretenir, réparer et améliorer votre véhicule.</p>
+    </div>
+
+    <div class="dr-services-grid">
+      <article class="dr-service-item" style="--service-color:#ff4f8b;">
+        <div class="dr-service-icon"><i class="fas fa-file-medical"></i></div>
+        <h3>Diagnostic Préventif</h3>
+        <p>Anticipez les pannes avec un diagnostic complet pour maintenir votre véhicule en bonne santé.</p>
+      </article>
+
+      <article class="dr-service-item" style="--service-color:#00a8ff;">
+        <div class="dr-service-icon"><i class="fas fa-microchip"></i></div>
+        <h3>Diagnostic et Réparation Mécanique</h3>
+        <p>Diagnostic rapide et réparations mécaniques complètes pour moteur, suspension et transmission.</p>
+      </article>
+
+      <article class="dr-service-item" style="--service-color:#ff9f1a;">
+        <div class="dr-service-icon"><i class="fas fa-car-circle-check"></i></div>
+        <h3>Diagnostic d'Achat</h3>
+        <p>Vérifiez l’état de votre future voiture d’occasion pour éviter les mauvaises surprises.</p>
+      </article>
+
+      <article class="dr-service-item" style="--service-color:#ff4d5a;">
+        <div class="dr-service-icon"><i class="fas fa-screwdriver-wrench"></i></div>
+        <h3>Vidange et Services Rapides</h3>
+        <p>Service rapide pour vidange et entretien de routine afin de garder votre moteur performant.</p>
+      </article>
+
+      <article class="dr-service-item" style="--service-color:#9b5cff;">
+        <div class="dr-service-icon"><i class="fas fa-car-side"></i></div>
+        <h3>Reprogrammation ECU</h3>
+        <p>Optimisez la performance de votre véhicule, EGR Off, FAP, Stage 1, et plus encore.</p>
+      </article>
+
+      <article class="dr-service-item" style="--service-color:#00d8c7;">
+        <div class="dr-service-icon"><i class="fas fa-handshake"></i></div>
+        <h3>Achat et Vente de Voitures</h3>
+        <p>Achetez et vendez des voitures en toute sécurité, avec des vérifications complètes de l’état des véhicules.</p>
+      </article>
+    </div>
+  </div>
+</section>
 
 <section class="dr-offers-section" id="offers">
 
